@@ -230,8 +230,9 @@ body {
 
 .tagline {
   font-size: .82rem;
+  font-weight: 700;
   color: var(--text-secondary);
-  letter-spacing: .4px;
+  letter-spacing: .6px;
 }
 
 /* ── Location Badge ── */
@@ -294,12 +295,43 @@ body {
   background: var(--border);
 }
 
+/* ── About Section ── */
+.about-section {
+  padding: 18px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, hsl(235, 18%, 12%) 0%, hsl(235, 16%, 11%) 100%);
+}
+
+.about-line {
+  font-family: 'Poppins', sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: .15px;
+  line-height: 1.5;
+}
+
+.about-line:first-child {
+  background: linear-gradient(135deg, var(--pink-light), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ── Action Buttons ── */
 .action-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  padding: 16px 16px 0;
+  padding: 16px 16px 16px;
 }
 
 .btn {
@@ -361,7 +393,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 16px 16px 20px;
+  padding: 14px 16px 20px;
 }
 
 .content-link {
@@ -619,8 +651,15 @@ body {
 
   .action-buttons {
     gap: 8px;
-    padding: 14px 14px 0;
+    padding: 14px 14px 14px;
   }
+
+  .about-section {
+    padding: 14px 18px 16px;
+    gap: 5px;
+  }
+
+  .about-line { font-size: .78rem; }
 
   .btn {
     padding: 14px 10px;
